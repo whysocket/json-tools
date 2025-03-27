@@ -255,8 +255,8 @@ export function JwtDecoder({ jwtData }: JwtDecoderProps) {
                       onClick={() => copyToClipboard(JSON.stringify(value), key)}
                     >
                       <div className="font-medium flex items-center gap-1.5">
-                        <Clock className="h-4 w-4 text-muted-foreground" />
-                        {key === "exp" ? "Expires" : "Issued at"}:
+                        {key}
+                        <Clock className="h-3 w-3  text-muted-foreground" />
                       </div>
                       <div className="flex flex-wrap items-center gap-2">
                         <div className="text-sm flex items-center gap-1">
